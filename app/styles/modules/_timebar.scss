@@ -1,0 +1,23 @@
+/* -----------------------------------------------------------------------------
+ * modules/timebar
+ * -------------------------------------------------------------------------- */
+.timebar {
+    padding-left: 24px;
+    background-color: $color-top-soft;
+    color: $color-neutral;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+
+    span {
+        color: $color-top-strong;
+        padding:0px 3px;
+    }
+}
+
+@media screen and (min-width: $screen-xs-min) {
+    .timebar {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
