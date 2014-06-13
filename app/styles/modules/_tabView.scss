@@ -1,0 +1,45 @@
+/* -----------------------------------------------------------------------------
+ * modules/tabView
+ * -------------------------------------------------------------------------- */
+@media screen and (min-width: $screen-xs-min) {
+    .tabView {
+        display: none;
+    }
+}
+.nav-tabs {
+
+	border:none;
+
+	li{
+
+			font-size:16px;
+			width: 33.33%;
+			text-align: center;
+
+			a{
+				text-transform:uppercase;
+				border:none;
+				border-radius:0px;
+				margin:0px;
+			}
+
+			&:not(.active) {
+	  			background-color:$color-top-soft;
+
+		  		a{
+		  			font-family:$font-family-sans-serif;
+		  			font-weight:300;
+		  			color:$color-neutral;
+		  		}
+
+			}
+
+			 &.active a{
+			 	color:$color-strong;
+			 	font-weight:550;
+				background-color:$color-flat-bottom;
+				font-family:$font-family-sans-serif;
+			 }
+	}
+
+}
